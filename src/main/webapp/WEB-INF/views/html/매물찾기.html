@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>온동네방네</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- IE 호환성 보기 방지 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+	<!-- UI Dev Resource-->
+	<link rel="stylesheet" type="text/css" href="../../css/ui_common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/ui_layout.css">
+	<link rel="stylesheet" type="text/css" href="../../css/ui_contents.css">
+	<!-- IE를 위한 호환성 Script -->
+	<!--[if lt IE 9]>
+	<script src="../../js/html5shiv.js"></script>
+	<![endif]-->
+	<!-- jQuery Script 로딩 -->
+	<script type="text/javascript" charset="UTF-8" src="../../js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+<!-- skip nav -->
+<div class="skip_accessibility">
+	<a href="#dongne_gnb"><span>메뉴 영역 바로가기</span></a>
+	<a href="#dongne_container"><span>본문 내용 바로가기</span></a>
+</div>
+<!-- //skip nav -->
+<hr />
+<div id="dongne_w">
+	<header>
+		<!-- 상단 메뉴 -->
+		<div class="header_menu">
+			<a href="#">로그인</a>
+			<a href="#">로그아웃</a>
+			<a href="#">회원가입</a>
+			<a href="#" class="admin"><i class="icon"></i>관리자 페이지</a>
+		</div>
+		<!-- //상단 메뉴 -->
+		
+		<!-- gnb -->
+		<div class="header_gnb">
+			<h1 class="header_logo"><a href="#"><i class="blind">내가 찾은 집은 다있다! 온동네방네</i></a></h1>
+			<h2 class="blind">온동네방네 메뉴</h2>
+			<div id="dongne_gnb" class="gnb_w">
+				<a href="#">내 주변 중개인 찾기</a>
+				<a href="#">매물 찾기</a>
+				<a href="#">분양 정보</a>
+				<a href="#">공실 내놓기</a>
+				<a href="#">매물 등록</a>
+				<a href="#">분양 정보 등록</a>
+				<a href="#">마이페이지</a>
+			</div>
+		</div>
+		<!-- //gnb -->
+	</header>
+
+	<hr />
+
+	<!-- sub container -->
+	<div id="dongne_container">
+		<!-- sub content -->
+		<div class="map_container">
+			<!-- 지도 영역 -->
+			<div class="map_area">
+				<div class="map_test"><!-- 테스트 -->
+					<img src="../../images/@img/@map.jpg" alt="" />
+				</div>
+
+				<!-- 즐겨찾기 메뉴 -->
+				<div class="tab_map">
+					<button type="button" type="button" class="btn_favorit"><i>즐겨찾기</i></button>
+					<button type="button" type="button" class="btn_street"><i>거리순</i></button>
+				</div>
+				<!-- //즐겨찾기 메뉴 -->
+
+				<!-- layer -->
+				<div class="map_layer" style="left:400px; top:600px;">
+					<div class="thumb_img">
+						<img src="../../images/@img/@img_thumb_52.jpg" width="89" height="68" alt="" />
+					</div>
+					<dl class="apt_w">
+						<dt>[아파트] <strong>연산 영산 무지개 아파트</strong></dt>
+						<dd>
+							<strong class="tit">최고층</strong>
+							<span class="txt">0층</span>
+						</dd>
+						<dd>
+							<strong class="tit">세 대 수</strong>
+							<span class="txt">4545세대</span>
+						</dd>
+						<dd>
+							<strong class="tit">준공년월</strong>
+							<span class="txt">1645-08-09</span>
+						</dd>
+					</dl>
+				</div>
+				<!-- //layer -->
+
+				<!-- layer -->
+				<div class="map_layer broker_info" style="left:100px; top:300px;">
+					<div class="thumb_img">
+						<img src="../../images/@img/@img_profile_72.png" width="45" height="45" alt="" />
+					</div>
+					<dl>
+						<dt>[김주영] <strong>블루웨이브 공인중개사무소</strong></dt>
+						<dd class="hp">010-1234-5678</dd>
+					</dl>
+				</div>
+				<!-- //layer -->
+
+				<!-- layer -->
+				<div class="map_layer" style="left:700px; top:300px;">
+					<div class="thumb_img">
+						<img src="../../images/@img/@img_thumb_52.jpg" width="89" height="68" alt="" />
+					</div>
+					<dl>
+						<dt>[오피스텔]</dt>
+						<dd><span class="sort">전세</span><strong class="price">6,000</strong></dd>
+						<dd><span class="sort">월세</span><strong class="price">4,00 / 40</strong></dd>
+					</dl>
+				</div>
+				<!-- //layer -->
+
+				<div class="map_ponit" style="left:80px; top:200px;"><a href="#"><span>41</span></a></div>
+				<div class="map_ponit" style="left:180px; top:400px;"><a href="#"><span>41</span></a></div>
+				<div class="map_ponit" style="left:80px; top:460px;"><a href="#"><span>41</span></a></div>
+				<div class="map_ponit" style="left:580px; top:100px;"><a href="#"><span>41</span></a></div>
+				<div class="map_ponit" style="left:780px; top:560px;"><a href="#"><span>41</span></a></div>
+			</div>
+			<!-- //지도 영역 -->
+
+			<!-- 검색 영역 -->
+			<div class="map_content">
+				<h3 class="blind">매물찾기</h3>
+				<div class="map_search_w">
+					<!-- tab -->
+					<div class="tab_map_search">
+						<button type="button">지역명</button>
+						<button type="button" class="selected">지하철</button>
+						<button type="button">대학교</button>
+						<button type="button">아파트</button>
+						<button type="button">통합검색</button>
+					</div>
+					<!-- tab -->
+
+					<!-- 검색유형 -->
+					<div class="search_form">
+						<form action="/" method="post">
+							<fieldset>
+								<legend>검색 선택</legend>
+								<select title="시,도 선택">
+									<option value="">시,도</option>
+								</select>
+								<select title="지역 선택">
+									<option value="">선택하세요</option>
+								</select>
+								<select title="지역 선택">
+									<option value="">선택하세요</option>
+								</select>
+							</fieldset>
+						</form>
+						<form action="/" method="post">
+							<fieldset>
+								<legend>검색 입력</legend>
+								<input type="text" class="ip_txt" title="검색어 입력" />
+								<button type="button" class="btn_search">검색</button>
+							</fieldset>
+						</form>
+					</div>
+					<!-- 검색유형 -->
+
+					<div class="search_type">
+						<h4>건물 유형</h4>
+						<div class="btn_srh_3">
+							<button type="button">전체</button>
+							<button type="button">원룸</button>
+							<button type="button" class="selected">투룸</button>
+							<button type="button">오피스텔</button>
+							<button type="button">빌라</button>
+							<button type="button">아파트</button>
+						</div>
+					</div>
+
+					<div class="search_type">
+						<h4>거래 유형</h4>
+						<div class="btn_srh_4">
+							<button type="button">전체</button>
+							<button type="button" class="selected">월세</button>
+							<button type="button">전세</button>
+							<button type="button">매매</button>
+						</div>
+					</div>
+
+					<!-- 상세 검색 영역 -->
+					<div class="detail_search_wrap" style="display:block;">
+						<div class="search_type">
+							<div class="item_type_a">
+								<h4>보증금/매매가</h4>
+								<select title="가격 선택">
+									<option value="">0만</option>
+								</select>
+								<span>~</span>
+								<select title="가격 선택">
+									<option value="">0만</option>
+								</select>
+							</div>
+							<div class="item_type_b">
+								<h4>월세</h4>
+								<select title="가격 선택">
+									<option value="">0만</option>
+								</select>
+								<span>~</span>
+								<select title="가격 선택">
+									<option value="">0만</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="search_type">
+							<h4>공급면적</h4>
+							<div class="btn_srh_3">
+								<button type="button">전체</button>
+								<button type="button" class="selected">20P 미만</button>
+								<button type="button">20P</button>
+								<button type="button">30P</button>
+								<button type="button">40P</button>
+								<button type="button">50P 이상</button>
+							</div>
+						</div>
+						
+						<div class="search_type">
+							<h4>방개수</h4>
+							<div class="btn_srh_3">
+								<button type="button">전체</button>
+								<button type="button" class="selected">원룸형</button>
+								<button type="button">방 1개</button>
+								<button type="button">방 2개</button>
+								<button type="button">방 3개</button>
+								<button type="button">방 4개+</button>
+							</div>
+						</div>
+						
+						<div class="search_type">
+							<h4>건물 유형 옵션</h4>
+							<div class="btn_srh_3">
+								<button type="button">주방분리</button>
+								<button type="button" class="selected">베란다</button>
+								<button type="button">복층</button>
+							</div>
+						</div>
+						
+						<div class="search_type">
+							<h4>월세 유형 옵션</h4>
+							<div class="btn_srh_2">
+								<button type="button">무보증 월세</button>
+								<button type="button" class="selected">단기 월세</button>
+							</div>
+						</div>
+					</div>
+					<!-- //상세 검색 영역 -->
+
+					<!-- 상세 검색 버튼 -->
+					<div class="btn_option">
+						<button type="button">상세 검색<i class="icon_more"></i></button>
+					</div>
+					<div class="btn_option">
+						<button type="button">상세 검색 닫기<i class="icon_close"></i></button>
+					</div>
+					<!-- //상세 검색 버튼 -->
+				</div>
+
+				<div class="tit_map_list">
+					<h4 class="tit_result">부산 진구 개금 3동</h4>
+					<button type="button" class="btn_close"><i class="blind">닫기</i></button>
+				</div>
+				<!-- 추천 중개 사무소 -->
+				<div class="tit_map_list">
+					<h4>★ 이 지역 추천 중개 사무소</h4>
+					<div class="recomm_broker">
+						<span class="profile"><img src="../../images/@img/@img_profile_72.png" width="45" height="45" alt="" /></span>
+						<h5>블루웨이브 부동산 중개사무소</h5>
+						<p class="txt_intro">원룸,투룸,O/T 전문 중개사무소</p>
+						<a href="#" class="get_room">등록 매물 : 23개</a>
+					</div>
+				</div>
+
+				<div class="map_list_wrap">
+					<!-- 중개 사무소 추천 리스트 -->
+					<ul class="recomm_list">
+						<li>
+							<span class="mark"><img src="../../images/ui_content/mark_real_xs.png" alt="Real" /></span>
+							<a href="#" class="map_link">
+								<div class="thumb_img"><img src="../../images/@img/@img_thumb_52.jpg" width="102" height="78"alt="" /></div>
+								<span class="price_info">
+									<span class="sort">전세</span><strong class="price">6,000</strong>
+								</span>
+								<span class="price_info">
+									<span class="sort">월세</span><strong class="price">5,000/40</strong>
+								</span>
+								<!-- new 매물 일 경우 클래스 new 추가 -->
+								<p class="noti new">연산역 초역세권 깔끔한 신축 오피스텔</p>
+								<div class="txt_info">
+									<p>금정구 구서동   오피스텔   원룸형   4층(40m)</p>
+									<p>블루웨이브 공인중개사 [김주영]</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<span class="mark"><img src="../../images/ui_content/mark_real_xs.png" alt="Real" /></span>
+							<a href="#" class="map_link">
+								<div class="thumb_img"><img src="../../images/@img/@img_thumb_52.jpg" width="102" height="78"alt="" /></div>
+								<span class="price_info">
+									<span class="sort">전세</span><strong class="price">6,000</strong>
+								</span>
+								<span class="price_info">
+									<span class="sort">월세</span><strong class="price">5,000/40</strong>
+								</span>
+								<!-- new 매물 일 경우 클래스 new 추가 -->
+								<p class="noti new">연산역 초역세권 깔끔한 신축 오피스텔</p>
+								<div class="txt_info">
+									<p>금정구 구서동   오피스텔   원룸형   4층(40m)</p>
+									<p>블루웨이브 공인중개사 [김주영]</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- //추천 중개 사무소 -->
+
+				<!-- 매물 리스트 -->
+				<div class="tit_map_list">
+					<h4>★ 이 지역 매물 리스트 (136)</h4>
+				</div>
+
+				<div class="map_list_wrap">
+					<ul class="map_list">
+						<!-- 검수 반려 -->
+						<li>
+							<a href="#" class="map_link">
+								<div class="thumb_img"><img src="../../images/@img/@img_thumb_52.jpg" width="102" height="78"alt="" /></div>
+								<span class="price_info">
+									<span class="sort">전세</span><strong class="price">6,000</strong>
+								</span>
+								<span class="price_info">
+									<span class="sort">월세</span><strong class="price">5,000/40</strong>
+								</span>
+								<p class="noti">연산역 초역세권 깔끔한 신축 오피스텔</p>
+								<div class="txt_info">
+									<p>금정구 구서동   오피스텔   원룸형   4층(40m)</p>
+									<p>블루웨이브 공인중개사 [김주영]</p>
+								</div>
+							</a>
+							<div class="chk_return"><p>검수 반려</p></div>
+						</li>
+						<!-- 거래 완료 -->
+						<li>
+							<a href="#" class="map_link">
+								<div class="thumb_img"><img src="../../images/@img/@img_thumb_52.jpg" width="102" height="78"alt="" /></div>
+								<span class="price_info">
+									<span class="sort">전세</span><strong class="price">6,000</strong>
+								</span>
+								<span class="price_info">
+									<span class="sort">월세</span><strong class="price">5,000/40</strong>
+								</span>
+								<p class="noti">연산역 초역세권 깔끔한 신축 오피스텔</p>
+								<div class="txt_info">
+									<p>금정구 구서동   오피스텔   원룸형   4층(40m)</p>
+									<p>블루웨이브 공인중개사 [김주영]</p>
+								</div>
+							</a>
+							<div class="chk_deal"><p>거래 완료</p></div>
+						</li>
+
+						<!-- 아파트 매물 -->
+						<li class="apt_w">
+							<a href="#" class="map_link">
+								<div class="thumb_img"><img src="../../images/@img/@img_thumb_52.jpg" width="102" height="78"alt="" /></div>
+								<div class="tit_apt">동래이안아파트</div>
+								<div class="txt_info">
+									<p>위치 : 부산 동래구 수안동 36-2</p>
+									<p>세대수 : 5세대   최고층 : 15층</p>
+									<p>분양금액 : 1억 5천 만원~3억 5천 만원</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="map_link">
+								<div class="thumb_img"><img src="../../images/@img/@img_thumb_52.jpg" width="102" height="78"alt="" /></div>
+								<span class="price_info">
+									<span class="sort">전세</span><strong class="price">6,000</strong>
+								</span>
+								<span class="price_info">
+									<span class="sort">월세</span><strong class="price">5,000/40</strong>
+								</span>
+								<p class="noti">연산역 초역세권 깔끔한 신축 오피스텔</p>
+								<div class="txt_info">
+									<p>금정구 구서동   오피스텔   원룸형   4층(40m)</p>
+									<p>블루웨이브 공인중개사 [김주영]</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- //매물 리스트 -->
+			</div>
+			<!-- //검색 영역 -->
+		</div>
+		<!-- //sub content -->
+	</div>
+	<!-- //sub container -->
+
+	<hr />
+
+	<!-- footer -->
+	<footer class="foot_w" style="display:none;">
+		<section class="inner_foot">
+			<h1 class="foot_logo"><span class="blind">내가 찾은 집은 다 있다! 온동네방네</span></h1>
+			<div class="foot_cont">
+				<ul class="foot_menu">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+					<li><a href="#">위치기반서비스 이용약관</a></li>
+					<li><a href="#">중개사무소 가입안내</a></li>
+				</ul>
+				<ul class="foot_info">
+					<li><strong>(주)블루웨이브 E&M</strong></li>
+					<li>Tel : 1899-8376</li>
+					<li>Fax : 051)864-7373</li>
+					<li>서비스 제휴 문의 : service@bluewaveenm.com</li>
+					<li><address>부산광역시 부산진구 중앙대로 857 광장빌딩 8층</address></li>
+					<li>대표이사 :  신봉근</li>
+					<li>사업자등록번호 : 872-88-00102</li>
+					<li>통신판매업 신고번호 : 제2015-부산연제-0115호<li>
+				</ul>
+				<p class="copy">COPYRIGHT(c) <strong>BLUEWAVE</strong> E&amp;M. ALL RIGHTS RESERVED.</p>
+				<div class="sns_link">
+					<a href="#" class="sns_blog" title="네이버 블로그 바로가기"><i class="blind">온동네방네 네이버 블로그</i></a>
+					<a href="#" class="sns_face" title="페이스북 바로가기"><i class="blind">온동네방네 페이스북</i></a>
+					<a href="#" class="sns_twitter" title="트위터 바로가기"><i class="blind">온동네방네 트위터</i></a>
+					<a href="#" class="sns_instar" title="인스타그램 바로가기"><i class="blind">온동네방네 인스타그램</i></a>
+					<a href="#" class="sns_talk" title="카카오톡 바로가기"><i class="blind">온동네방네 카카오톡</i></a>
+					<a href="#" class="sns_kakao" title="카카오스토리 바로가기"><i class="blind">온동네방네 카카오스토리</i></a>
+				</div>
+			</div>
+		</section>
+	</footer>
+	<!-- //footer -->
+</div>
+</body>
+</html>
